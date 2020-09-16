@@ -1,0 +1,147 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/shallow-focus-photography-of-purple-flowers-792727.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 40%;
+        background-color: #fad7fd;
+        border-radius: 60px;
+
+        h1 {
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+
+        form {
+            width: 70vw;
+            display: flex;
+            flex-direction: column;
+
+            .formDives {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: 20px;
+                    color: black;
+                    padding-bottom: 10px;
+                }
+
+                .MuiFormControl-root {
+                    padding-bottom: 10px;
+
+                    input {
+
+                        &::placeholder {
+                            color: #101010;
+                        }
+                    }
+                }
+            }
+
+            button {
+
+                span {
+                    font-weight: 500;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .App {
+
+        .container {
+            height: 50%;
+
+            h1 {
+                font-size: 60px;
+                padding-bottom: 40px;
+            }
+
+            form {
+                width: 60vw;
+
+                .formDives {
+
+                    label {
+                        font-size: 30px;
+                        color: black;
+                        padding-bottom: 20px;
+                    }
+
+                    .MuiFormControl-root {
+                        padding-bottom: 20px;
+
+                        input {
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                button {
+
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .App {
+
+        .container {
+            width: 55%;
+
+            h1 {
+                font-size: 70px;
+                padding-bottom: 50px;
+            }
+
+            form {
+                width: 40vw;
+
+                .formDives {
+
+                    label {
+                        font-size: 40px;
+                        color: black;
+                        padding-bottom: 30px;
+                    }
+
+                    .MuiFormControl-root {
+                        padding-bottom: 30px;
+
+                        input {
+                            font-size: 35px;
+                        }
+                    }
+                }
+
+                button {
+
+                    span {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
